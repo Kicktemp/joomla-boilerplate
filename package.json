@@ -51,9 +51,9 @@
     "[PLUGINTYPE]": "system"
   },
   "casesensitive": {
-    "ktrpvar": "kickboilerplate",
-    "KtRpVar": "KickBoilerPlate",
-    "KTRPVAR": "KICKBOILERPLATE"
+    "joomlaboilerplate": "kickboilerplate",
+    "JoomlaBoilerplate": "KickBoilerPlate",
+    "JOOMLABOILERPLATE": "KICKBOILERPLATE"
   },
   "boilerplate": {
     "files": [
@@ -111,10 +111,10 @@
       },
       {
         "src": [
-          "./boilerplates/component/ktrpvar.xml"
+          "./boilerplates/component/joomlaboilerplate.xml"
         ],
         "replacesrc": [
-          "./boilerplates/component/ktrpvar.xml"
+          "./boilerplates/component/joomlaboilerplate.xml"
         ],
         "dest": "src/structure/administrator/components/com_kickboilerplate"
       }

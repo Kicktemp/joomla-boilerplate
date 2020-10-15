@@ -14,7 +14,7 @@
   <maintainer>[AUTHOR]</maintainer>
   <maintainerurl>[AUTHOR_URL]</maintainerurl>
   <php_minimum>7.0.0</php_minimum>
-  <element>ktrpvar</element>
+  <element>joomlaboilerplate</element>
   <type>plugin</type>
   <folder>[PLUGINTYPE]</folder>
   <client>site</client>

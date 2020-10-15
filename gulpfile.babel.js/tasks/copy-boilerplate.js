@@ -22,12 +22,12 @@ function cleancopy() {
   return mergeStream(pjson.boilerplate.files.map(function(item) {
     return src(item.src)
       .pipe(rename(function (path) {
-        path.dirname = path.dirname.replace(/ktrpvar/g, pjson.casesensitive.ktrpvar);
-        path.basename = path.basename.replace(/ktrpvar/g, pjson.casesensitive.ktrpvar);
+        path.dirname = path.dirname.replace(/joomlaboilerplate/g, pjson.casesensitive.joomlaboilerplate);
+        path.basename = path.basename.replace(/joomlaboilerplate/g, pjson.casesensitive.joomlaboilerplate);
       }))
       .pipe(plumber({errorHandler}))
       .pipe(gulpif(!isProd, changed(item.dest)))
-      .pipe(dest(item.dest.replace(/ktrpvar/g, pjson.casesensitive.ktrpvar)))
+      .pipe(dest(item.dest.replace(/joomlaboilerplate/g, pjson.casesensitive.joomlaboilerplate)))
   }))
 }
 
@@ -35,13 +35,13 @@ function replacecopy() {
   return mergeStream(pjson.boilerplate.files.map(function(item) {
     return src(item.replacesrc)
       .pipe(rename(function (path) {
-        path.dirname = path.dirname.replace(/ktrpvar/g, pjson.casesensitive.ktrpvar);
-        path.basename = path.basename.replace(/ktrpvar/g, pjson.casesensitive.ktrpvar);
+        path.dirname = path.dirname.replace(/joomlaboilerplate/g, pjson.casesensitive.joomlaboilerplate);
+        path.basename = path.basename.replace(/joomlaboilerplate/g, pjson.casesensitive.joomlaboilerplate);
       }))
       .pipe(replaceStrings(pjson.casesensitive))
       .pipe(plumber({errorHandler}))
       .pipe(gulpif(!isProd, changed(item.dest)))
-      .pipe(dest(item.dest.replace(/ktrpvar/g, pjson.casesensitive.ktrpvar)))
+      .pipe(dest(item.dest.replace(/joomlaboilerplate/g, pjson.casesensitive.joomlaboilerplate)))
   }))
 }
 

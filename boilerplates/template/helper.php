@@ -1,7 +1,7 @@
 <?php
 /**
  * @package    Joomla.Site
- * @subpackage Template.ktrpvar
+ * @subpackage Template.joomlaboilerplate
  *
  * @author     [AUTHOR] <[AUTHOR_EMAIL]>
  * @copyright  [COPYRIGHT]
@@ -16,14 +16,14 @@ use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Uri\Uri;
 
 /**
- * KtRpVar template helper.
+ * JoomlaBoilerplate template helper.
  *
  * @package    Joomla.Site
- * @subpackage Template.ktrpvar
+ * @subpackage Template.joomlaboilerplate
  * 
  * @since   1.0.0
  */
-class TplKtRpVarHelper
+class TplJoomlaBoilerplateHelper
 {
 	/**
 	 * Method to get Template

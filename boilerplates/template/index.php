@@ -1,7 +1,7 @@
 <?php
 /**
  * @package    Joomla.Site
- * @subpackage Template.ktrpvar
+ * @subpackage Template.joomlaboilerplate
  *
  * @author     [AUTHOR] <[AUTHOR_EMAIL]>
  * @copyright  [COPYRIGHT]
@@ -15,9 +15,9 @@ use Joomla\CMS\Language\Text;
 
 require_once JPATH_THEMES . '/' . $this->template . '/helper.php';
 
-tplKtRpVarHelper::loadCss();
-tplKtRpVarHelper::loadJs();
-tplKtRpVarHelper::setMetadata();
+tplJoomlaBoilerplateHelper::loadCss();
+tplJoomlaBoilerplateHelper::loadJs();
+tplJoomlaBoilerplateHelper::setMetadata();
 
 ?>
 <!DOCTYPE html>
@@ -25,10 +25,10 @@ tplKtRpVarHelper::setMetadata();
 <head>
 	<jdoc:include type="head" />
 </head>
-<body class="<?php echo tplKtRpVarHelper::setBodySuffix(); ?>">
-<?php echo tplKtRpVarHelper::setAnalytics(0, 'your-analytics-id'); ?>
+<body class="<?php echo tplJoomlaBoilerplateHelper::setBodySuffix(); ?>">
+<?php echo tplJoomlaBoilerplateHelper::setAnalytics(0, 'your-analytics-id'); ?>
 
-<a href="#main" class="sr-only sr-only-focusable"><?php echo Text::_('TPL_KTRPVAR_SKIP_LINK_LABEL'); ?></a>
+<a href="#main" class="sr-only sr-only-focusable"><?php echo Text::_('TPL_JOOMLABOILERPLATE_SKIP_LINK_LABEL'); ?></a>
 
 <a href="<?php echo $this->baseurl; ?>/">
     <?php if ($this->params->get('sitedescription')) : ?>
@@ -54,7 +54,7 @@ tplKtRpVarHelper::setMetadata();
 <footer>
 	<jdoc:include type="modules" name="footer" style="none" />
 	<p>
-		&copy; <?php echo date('Y'); ?> <?php echo tplKtRpVarHelper::getSitename(); ?>
+		&copy; <?php echo date('Y'); ?> <?php echo tplJoomlaBoilerplateHelper::getSitename(); ?>
 	</p>
 </footer>
 <jdoc:include type="modules" name="debug" style="none" />

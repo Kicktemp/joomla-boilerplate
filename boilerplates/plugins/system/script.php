@@ -11,12 +11,12 @@
 defined('_JEXEC') or die;
 
 /**
- * KtRpVar script file.
+ * JoomlaBoilerplate script file.
  *
  * @package   [PACKAGE_NAME]
  * @since     1.0.0
  */
-class plgSystemKtRpVarInstallerScript
+class plgSystemJoomlaBoilerplateInstallerScript
 {
 	/**
 	 * Constructor

@@ -1,7 +1,7 @@
 <?php
 /**
  * @package    Joomla.Site
- * @subpackage Template.ktrpvar
+ * @subpackage Template.joomlaboilerplate
  *
  * @author     [AUTHOR] <[AUTHOR_EMAIL]>
  * @copyright  [COPYRIGHT]
@@ -13,8 +13,8 @@ defined('_JEXEC') or die;
 
 require_once JPATH_THEMES . '/' . $this->template . '/helper.php';
 
-tplKtRpVarHelper::loadCss();
-tplKtRpVarHelper::setMetadata();
+tplJoomlaBoilerplateHelper::loadCss();
+tplJoomlaBoilerplateHelper::setMetadata();
 
 ?>
 <!DOCTYPE html>
