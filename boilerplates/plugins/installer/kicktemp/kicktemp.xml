@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.8" type="plugin" group="installer" method="upgrade">
+    <name>Installer - Kicktemp</name>
+    <version>1.0.0</version>
+    <description>PLG_INSTALLER_KICKTEMP_DESCRIPTION</description>
+    <creationDate>May 2020</creationDate>
+    <copyright>Copyright © 2020 Kicktemp GmbH. All rights reserved.</copyright>
+    <license>GNU General Public License v2 or later</license>
+    <author>Kicktemp</author>
+    <authorEmail>hello@kicktemp.com</authorEmail>
+    <authorUrl>http://kicktemp.com</authorUrl>
+    <scriptfile>script.php</scriptfile>
+    <files>
+        <folder>language</folder>
+        <filename plugin="kicktemp">kicktemp.php</filename>
+        <filename>script.php</filename>
+        <filename>CHANGELOG.md</filename>
+        <filename>README.md</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="apikey" type="textarea" label="PLG_INSTALLER_KICKTEMP_API_KEY" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
