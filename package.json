@@ -108,15 +108,6 @@
           "./boilerplates/component/media/**/.*.{php,html,xml,ini,less,json,js,css}"
         ],
         "dest": "src/structure/media"
-      },
-      {
-        "src": [
-          "./boilerplates/component/joomlaboilerplate.xml"
-        ],
-        "replacesrc": [
-          "./boilerplates/component/joomlaboilerplate.xml"
-        ],
-        "dest": "src/structure/administrator/components/com_kickboilerplate"
       }
     ]
   },

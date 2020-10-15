@@ -56,20 +56,28 @@ export const config = {
   },
   packagefiles: [
     {
-      src: './releasefiles/plugins/installer/kicktemp/**/**',
-      dest: 'sourcefiles/plg_installer_kicktemp'
+      src: './releasefiles/components/com_kickboilerplate/**/**',
+      dest: 'sourcefiles/com_kickboilerplate/site'
     },
     {
-      src: './releasefiles/plugins/system/kickytp/**/**',
-      dest: 'sourcefiles/plg_system_kickytp'
+      src: './releasefiles/administrator/components/com_kickboilerplate/**/**',
+      dest: 'sourcefiles/com_kickboilerplate/admin'
     },
     {
-      src: './releasefiles/pkg_kickytp.xml',
-      dest: 'package/'
+      src: './releasefiles/administrator/components/com_kickboilerplate/kickboilerplate.xml',
+      dest: 'sourcefiles/com_kickboilerplate/'
     },
     {
-      src: './releasefiles/pkg_script.php',
-      dest: 'package/'
+      src: './releasefiles/administrator/components/com_kickboilerplate/script.php',
+      dest: 'sourcefiles/com_kickboilerplate/'
+    },
+    {
+      src: './releasefiles/media/com_kickboilerplate/**/**',
+      dest: 'sourcefiles/com_kickboilerplate/media'
+    },
+    {
+      src: './releasefiles/plugins/system/kickboilerplate/**/**',
+      dest: 'sourcefiles/plg_system_kickboilerplate'
     }
   ],
   package: [
@@ -92,7 +100,7 @@ export const config = {
   archiver: [
     {
       destination : 'package/packages/',
-      name: 'plg_system_kickytp',
+      name: 'plg_system_kickboilerplate',
       suffixversion: false,
       types: [
         {
@@ -104,14 +112,14 @@ export const config = {
         }
       ],
       folders: [
-        'sourcefiles/plg_system_kickytp'
+        'sourcefiles/plg_system_kickboilerplate'
       ],
       files: [
       ]
     },
     {
       destination : 'package/packages/',
-      name: 'plg_installer_kicktemp',
+      name: 'com_kickboilerplate',
       suffixversion: false,
       types: [
         {
@@ -123,23 +131,7 @@ export const config = {
         }
       ],
       folders: [
-        'sourcefiles/plg_installer_kicktemp'
-      ],
-      files: [
-      ]
-    },
-    {
-      destination : 'archives/',
-      name: 'pkg_kickytp',
-      suffixversion: true,
-      types: [
-        {
-          extension: '.zip',
-          type: 'zip'
-        }
-      ],
-      folders: [
-        'package'
+        'sourcefiles/com_kickboilerplate'
       ],
       files: [
       ]

@@ -38,4 +38,4 @@ export function deletePackageFolder() {
     .pipe(clean({force: true}))
 }
 
-export const cleaner = series(deleteSourcefilesFolder, deleteArchivesFolder, deletePackageFolder);
+export const cleaner = series(deleteReleasefilesFolder, deleteSourcefilesFolder, deleteArchivesFolder, deletePackageFolder);

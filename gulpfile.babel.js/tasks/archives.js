@@ -19,7 +19,7 @@ export function buildArchives(cb) {
     };
   };
 
-  builder().then(() =>{
+  builder().then(() => {
     cb()
   });
 }
@@ -27,7 +27,7 @@ export function buildArchives(cb) {
 const build = archivesetup => {
   return new Promise((resolve, reject) => {
     if (!fs.existsSync(archivesetup.destination)){
-      fs.mkdirSync(archivesetup.destination);
+      fs.mkdirSync(archivesetup.destination, { recursive: true });
     }
 
     let finisher = 0;

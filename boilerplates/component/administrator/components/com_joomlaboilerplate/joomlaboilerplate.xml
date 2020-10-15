@@ -28,14 +28,14 @@
 	</update>
 
 	<!-- Media files -->
-	<media folder="media/com_joomlaboilerplate" destination="com_joomlaboilerplate">
+	<media folder="media" destination="com_joomlaboilerplate">
 		<folder>css</folder>
 		<folder>images</folder>
 		<folder>js</folder>
 	</media>
 
 	<!-- Front-end files -->
-	<files folder="components/com_joomlaboilerplate">
+	<files folder="site">
 		<filename>joomlaboilerplate.php</filename>
 		<filename>controller.php</filename>
 		<folder>controllers</folder>
@@ -58,7 +58,7 @@
 		</submenu>
 
 		<!-- Core files -->
-		<files folder="administrator/components/com_joomlaboilerplate">
+		<files folder="admin">
 			<filename>joomlaboilerplate.php</filename>
 			<filename>access.xml</filename>
 			<filename>config.xml</filename>

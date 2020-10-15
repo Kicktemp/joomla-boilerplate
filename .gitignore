@@ -6,6 +6,7 @@
 
 # Build generated
 /dist
+/src
 /archives
 /sourcefiles
 /releasefiles

@@ -15,9 +15,8 @@ import { cleaner, deleteReleasefilesFolder } from './clean';
 import { config } from '../config';
 
 export const release = series(
-  deleteReleasefilesFolder,
-  copyRelease,
   cleaner,
+  copyRelease,
   copyPackageFiles,
   buildArchives
 );
